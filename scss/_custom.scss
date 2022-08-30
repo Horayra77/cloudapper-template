@@ -1,0 +1,36 @@
+// scss-docs-start theme-color-variables
+// $primary: #dc3545;
+// $secondary: #20304f;
+// $dark: #162440;
+
+
+$variable-prefix: bs-; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix: $variable-prefix;
+
+// Spacers
+$spacer: 1rem;
+$custom-spacers: (
+    10: $spacer * 0.625,
+    20: $spacer * 1.25,
+    30: $spacer * 1.875,
+    40: $spacer * 2.5,
+    60: $spacer * 3.75,
+    100: $spacer * 6.25,
+    200: $spacer * 12.5,
+);
+
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+);
+$spacers: map-merge($spacers , $custom-spacers );
+
+
+
+
+// Import Bootstrap 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
