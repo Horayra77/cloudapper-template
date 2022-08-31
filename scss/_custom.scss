@@ -1,6 +1,7 @@
 // scss-docs-start theme-color-variables
-// $primary: #dc3545;
-// $secondary: #20304f;
+$primary: #1a73e8;
+$secondary: #70C92F;
+$success: #04A6F4;
 // $dark: #162440;
 
 
@@ -29,7 +30,44 @@ $spacers: (
 );
 $spacers: map-merge($spacers , $custom-spacers );
 
+// Typography
 
+$small-font-size: .875rem;
+
+$font-family-sans-serif: 'Heebo', sans-serif;
+$heading-font-family: 'Heebo', sans-serif;
+$headings-font-family: var(--#{$prefix}heading-font-family);
+
+
+
+// Navbar
+$navbar-padding-y: 0;
+$navbar-light-color: #272742;
+$navbar-light-active-color: $primary;
+$navbar-nav-link-padding-x: 1rem;
+
+// Body
+$body-color: #272742;
+
+// Links
+
+// Navs
+$nav-link-color: $body-color;
+
+// Buttons
+$btn-border-radius: 8px;
+$btn-focus-box-shadow: none;
+$btn-font-weight: 500;
+$btn-font-family: $heading-font-family;
+$btn-line-height: 1;
+$btn-padding-y: 14px;
+$btn-padding-x: 15px;
+
+
+$btn-padding-y-sm: 7.75px;
+$btn-padding-x-sm: 15px;
+$btn-font-size-sm: 15px;
+$btn-border-radius-sm: 8px;
 
 
 // Import Bootstrap 5

@@ -1,4 +1,19 @@
 @use 'custom' as *;
 
 /*-- root variables --*/
-:root {}
+:root {
+    --#{$prefix}heading-font-family: #{$heading-font-family};
+    --#{$prefix}font-family-sans-serif: #{$font-family-sans-serif};
+    --#{$prefix}hover-bg: #fba919;
+}
+
+.heading-font {
+    font-family: var(--#{$prefix}heading-font-family);
+}
+
+.body-font {
+    font-family: var(--#{$prefix}font-family-sans-serif);
+}
+
+
+// font-family: 'Heebo', sans-serif;
