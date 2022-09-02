@@ -6,6 +6,7 @@
 // Import Component
 @use 'components/buttons';
 @use 'components/elements';
+@use 'components/card';
 
 
 
@@ -14,4 +15,5 @@
 @use 'sections/topbar';
 @use 'sections/navbar';
 @use 'sections/contact';
+@use 'sections/whitepaper';
 @use 'sections/footer';

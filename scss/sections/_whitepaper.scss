@@ -1,0 +1,8 @@
+@use '../custom' as *;
+@use '../global' as *;
+
+.whitepaper-section {
+    background-image: url('../../assets/images/cloudapper-whitepaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

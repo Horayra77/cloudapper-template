@@ -19,6 +19,7 @@ $custom-spacers: (
     45: $spacer * 2.8125,
     60: $spacer * 3.75,
     70: $spacer * 4.375,
+    80: $spacer * 5,
     90: $spacer * 5.625,
     100: $spacer * 6.25,
     120: $spacer * 7.5,
@@ -77,6 +78,9 @@ $btn-border-radius-sm: 50rem;
 
 // Dropdowns
 $dropdown-link-hover-bg: none;
+
+// Card
+$card-border-width: 0;
 
 // Import Bootstrap 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

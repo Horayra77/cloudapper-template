@@ -10,8 +10,8 @@
     .button.is-play {
         background-color: #fff;
         border-radius: 50%;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
 
     .button.is-play .button-outer-circle {
@@ -124,9 +124,43 @@
     }
 
 
-    .video-play-button {
+
+
+
+    .video-play-button-position {
         top: 250px;
         right: 222px;
     }
 
+    @media screen and (max-width: 480px) {
+        .video-play-button-position {
+            top: 156px;
+            right: 142px;
+        }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 992px) {
+        .video-play-button-position {
+            top: 181px;
+            right: 162px;
+        }
+    }
+
+}
+
+
+.custom-border-bottom {
+    border-bottom-color: var(--#{$prefix}primary);
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    width: 40%;
+
+    &::before {
+        content: '';
+        border-top: 6px solid var(--#{$prefix}primary);
+        width: 45px;
+        border-radius: 30px;
+        position: absolute;
+        bottom: -3.5px;
+    }
 }
