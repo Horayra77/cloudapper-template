@@ -124,14 +124,6 @@
     }
 
 
-
-
-
-    .video-play-button-position {
-        top: 250px;
-        right: 222px;
-    }
-
     @media screen and (max-width: 480px) {
         .video-play-button-position {
             top: 156px;
@@ -143,6 +135,21 @@
         .video-play-button-position {
             top: 181px;
             right: 162px;
+        }
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1400px) {
+        .video-play-button-position {
+            top: 250px;
+            right: 235px;
+        }
+    }
+
+
+    @media screen and (min-width: 1400px) {
+        .video-play-button-position {
+            top: 300px;
+            right: 290px;
         }
     }
 
