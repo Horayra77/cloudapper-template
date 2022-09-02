@@ -1,0 +1,15 @@
+@use '../custom' as *;
+@use '../global' as *;
+
+.footer-section {
+    padding-top: 371.75px;
+
+    .nav-link {
+        transition: opacity 150ms linear;
+
+        &:hover,
+        &:focus {
+            opacity: 1 !important;
+        }
+    }
+}

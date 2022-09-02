@@ -1,28 +1,26 @@
 @use '../custom' as *;
 @use '../global' as *;
 
-.btn-angle-right {
-    background: rgb(0 0 0 / 40%);
-    border-radius: 0 8px 8px 0;
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    right: -1px;
-}
+// .btn-angle-right {
+//     background: rgb(0 0 0 / 40%);
+//     border-radius: 0 8px 8px 0;
+//     position: absolute;
+//     top: -1px;
+//     bottom: -1px;
+//     right: -1px;
+// }
 
-.btn-angle-right-m {
-    @extend .btn-angle-right;
-    padding: 15px;
-}
+// .btn-angle-right-m {
+//     @extend .btn-angle-right;
+//     padding: 15px;
+// }
 
-.btn-angle-right-sm {
-    @extend .btn-angle-right;
-    padding: 7.75px 7.5px;
-}
+// .btn-angle-right-sm {
+//     @extend .btn-angle-right;
+//     padding: 7.75px 7.5px;
+// }
 
 .btn {
-    padding-right: 56px;
-
     &:active {
         &:focus {
             box-shadow: none;
@@ -34,28 +32,19 @@
     }
 }
 
-.btn-sm {
-    padding-right: 38px;
-}
-
-.btn-secondary,
-.btn-success {
+.btn-primary,
+.btn-secondary {
     color: var(--#{$prefix}white);
-    transition: 0.4s;
-}
+    transition: all 150ms linear;
 
-.btn-secondary:hover,
-.btn-secondary:focus,
-.btn-success:hover,
-.btn-success:focus {
-    background-color: var(--#{$prefix}hover-bg);
-    border-color: var(--#{$prefix}hover-bg);
-    color: var(--#{$prefix}white);
-}
-
-.btn-success:hover,
-.btn-success:focus {
-    .btn-angle-right-m {
-        color: var(--#{$prefix}black);
+    &:hover {
+        transform: translateY(-2px);
     }
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: var(--#{$prefix}white);
 }

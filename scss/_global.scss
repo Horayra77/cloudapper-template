@@ -4,7 +4,10 @@
 :root {
     --#{$prefix}heading-font-family: #{$heading-font-family};
     --#{$prefix}font-family-sans-serif: #{$font-family-sans-serif};
-    --#{$prefix}hover-bg: #fba919;
+    --#{$prefix}small: #{$small-font-size};
+    --#{$prefix}body-color: #{$body-color};
+    --#{$prefix}background-color: #481FA0;
+    --#{$prefix}section-bg: #F8F9FA;
 }
 
 .heading-font {
@@ -15,5 +18,12 @@
     font-family: var(--#{$prefix}font-family-sans-serif);
 }
 
+.fw-medium {
+    font-weight: 500;
+}
+
+.bg-section {
+    background-color: var(--#{$prefix}section-bg);
+}
 
 // font-family: 'Heebo', sans-serif;

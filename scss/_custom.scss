@@ -1,8 +1,9 @@
 // scss-docs-start theme-color-variables
-$primary: #1a73e8;
+$primary: #04A6F4;
 $secondary: #70C92F;
-$success: #04A6F4;
+// $success: #04A6F4;
 // $dark: #162440;
+$dark: #17161A;
 
 
 $variable-prefix: bs-; // Deprecated in v5.2.0 for the shorter `$prefix`
@@ -15,8 +16,13 @@ $custom-spacers: (
     20: $spacer * 1.25,
     30: $spacer * 1.875,
     40: $spacer * 2.5,
+    45: $spacer * 2.8125,
     60: $spacer * 3.75,
+    70: $spacer * 4.375,
+    90: $spacer * 5.625,
     100: $spacer * 6.25,
+    120: $spacer * 7.5,
+    130: $spacer * 8.125,
     200: $spacer * 12.5,
 );
 
@@ -32,7 +38,7 @@ $spacers: map-merge($spacers , $custom-spacers );
 
 // Typography
 
-$small-font-size: .875rem;
+$small-font-size: 0.8125rem;
 
 $font-family-sans-serif: 'Heebo', sans-serif;
 $heading-font-family: 'Heebo', sans-serif;
@@ -41,13 +47,13 @@ $headings-font-family: var(--#{$prefix}heading-font-family);
 
 
 // Navbar
-$navbar-padding-y: 0;
-$navbar-light-color: #272742;
+// $navbar-padding-y: 0;
+// $navbar-light-color: #272742;
 $navbar-light-active-color: $primary;
 $navbar-nav-link-padding-x: 1rem;
 
 // Body
-$body-color: #272742;
+$body-color: $dark;
 
 // Links
 
@@ -55,20 +61,22 @@ $body-color: #272742;
 $nav-link-color: $body-color;
 
 // Buttons
-$btn-border-radius: 8px;
+$btn-border-radius: 50rem;
 $btn-focus-box-shadow: none;
-$btn-font-weight: 500;
-$btn-font-family: $heading-font-family;
-$btn-line-height: 1;
-$btn-padding-y: 14px;
-$btn-padding-x: 15px;
+$btn-font-weight: 700;
+// $btn-font-family: $heading-font-family;
+$btn-line-height: 1.5;
+$btn-padding-y: 15px;
+$btn-padding-x: 40px;
 
 
-$btn-padding-y-sm: 7.75px;
+$btn-padding-y-sm: 10px;
 $btn-padding-x-sm: 15px;
-$btn-font-size-sm: 15px;
-$btn-border-radius-sm: 8px;
+$btn-font-size-sm: 14px;
+$btn-border-radius-sm: 50rem;
 
+// Dropdowns
+$dropdown-link-hover-bg: none;
 
 // Import Bootstrap 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

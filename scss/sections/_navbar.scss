@@ -1,18 +1,11 @@
 @use '../custom' as *;
-
-$color_1: var(--#{$prefix}primary);
+@use '../global' as *;
 
 .navbar {
-    box-shadow: 0 4px 20px 0 rgb(49 67 81 / 15%);
-
-    .navbar-nav {
-        .nav-link {
-            --#{$prefix}nav-link-font-size: 15px;
-            --#{$prefix}nav-link-font-weight: 400;
-        }
+    .nav-link {
+        color: var(--#{$prefix}font-family-sans-serif);
     }
 }
-
 
 @media all and (min-width: 992px) {
     .navbar {
@@ -31,9 +24,6 @@ $color_1: var(--#{$prefix}primary);
             }
 
             &:hover {
-                .nav-link {
-                    color: $color_1;
-                }
 
                 .dropdown-menu {
                     transition: .3s;

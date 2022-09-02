@@ -1,0 +1,28 @@
+@use '../custom' as *;
+@use '../global' as *;
+
+.topbar {
+    .dropdown-toggle {
+        &::after {
+            content: none;
+        }
+
+        font-size: var(--#{$prefix}small);
+    }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: transparent;
+    opacity: 1;
+    color: var(--#{$prefix}black);
+}
+
+.dropdown-item {
+    opacity: 0.7;
+
+    &:hover {
+        background-color: transparent;
+        opacity: 1;
+    }
+}
