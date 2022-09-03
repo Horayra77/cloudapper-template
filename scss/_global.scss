@@ -26,4 +26,14 @@
     background-color: var(--#{$prefix}section-bg);
 }
 
+.btn-gray-400 {
+    background-color: #c6d3e6 !important;
+    color: #fff !important;
+    border-color: transparent !important;
+}
+
+.opacity-1 {
+    opacity: 1 !important;
+}
+
 // font-family: 'Heebo', sans-serif;

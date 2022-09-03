@@ -43,7 +43,7 @@ jQuery(document).ready(function ($) {
         nav: false,
         autoplay: true,
         dots: false,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 2000,
         responsive: {
             0: {
                 items: 2
