@@ -1,0 +1,78 @@
+@use '../custom' as *;
+@use '../global' as *;
+
+
+.review-section {
+    .blockquote {
+        position: relative;
+        padding-top: 1.5rem;
+        padding-left: 1.75rem;
+
+        &::before {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+            line-height: 1em;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            content: "“";
+            color: rgb(26, 30, 44);
+        }
+    }
+
+    .blockquote-footer {
+
+        &::before {
+            content: "";
+        }
+    }
+
+    .owl-theme .owl-nav [class*=owl-] {
+        margin: 1px;
+    }
+
+    .owl-nav {
+        position: absolute;
+        right: 0;
+        bottom: 2.5px;
+        -webkit-tap-highlight-color: transparent;
+
+        .owl-prev,
+        .owl-next {
+            span {
+                font-size: 24px;
+                padding: 4px 17.9px;
+                background-color:var(--#{$prefix}primary);
+                color: var(--#{$prefix}white);
+            }
+        }
+    }
+}
+
+.help-section {
+    .transition-all {
+        transition: all 400ms ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--#{$prefix}primary) !important;
+            color: var(--#{$prefix}white);
+        }
+    }
+
+    .feature-icon-sm {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        font-size: 2rem;
+    }
+
+    .feature-secondary {
+        background-color: #F1F5FA;
+        // color: var(--bs-color-primary);
+    }
+}
