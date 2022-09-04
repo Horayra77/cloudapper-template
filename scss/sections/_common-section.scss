@@ -120,4 +120,21 @@
     background-image: linear-gradient(63.34deg, #FFF5EB 0%, #F4F2F9 100%);
 }
 
-.third-party-section {}
+// .third-party-section {}
+
+.popular-app-section {
+    .popularapp {
+        border-radius: 10px;
+        transition: all .4s ease-in-out;
+        box-shadow: 0 0 10px rgb(21 87 153 / 8%);
+    }
+
+    a {
+        color: var(--#{$prefix}black);
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            color: var(--#{$prefix}primary);
+        }
+    }
+}
