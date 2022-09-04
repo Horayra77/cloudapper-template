@@ -5032,26 +5032,26 @@ textarea.form-control-lg {
 .accordion {
   --bs-accordion-color: #000;
   --bs-accordion-bg: #fff;
-  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
-  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-transition: 0.4s;
+  --bs-accordion-border-color: rgba(0, 0, 0, 0.125);
   --bs-accordion-border-width: 1px;
-  --bs-accordion-border-radius: 0.375rem;
-  --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
-  --bs-accordion-btn-padding-x: 1.25rem;
-  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-border-radius: 0.625rem;
+  --bs-accordion-inner-border-radius: 0.625rem;
+  --bs-accordion-btn-padding-x: 1.5rem;
+  --bs-accordion-btn-padding-y: 1.5rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  --bs-accordion-btn-icon-width: 1.25rem;
-  --bs-accordion-btn-icon-transform: rotate(-180deg);
-  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230495dc'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  --bs-accordion-btn-focus-border-color: #82d3fa;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2304A6F4'%3e%3cpath fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon-width: 1.5rem;
+  --bs-accordion-btn-icon-transform: rotateZ(90deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease;
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2304A6F4'%3e%3cpath fill-rule='evenodd' d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-focus-border-color: #04A6F4;
   --bs-accordion-btn-focus-box-shadow: none;
-  --bs-accordion-body-padding-x: 1.25rem;
-  --bs-accordion-body-padding-y: 1rem;
-  --bs-accordion-active-color: #0495dc;
-  --bs-accordion-active-bg: #e6f6fe;
+  --bs-accordion-body-padding-x: 1.5rem;
+  --bs-accordion-body-padding-y: 1.5rem;
+  --bs-accordion-active-color: #04A6F4;
+  --bs-accordion-active-bg: #f8f8f8;
 }
 
 .accordion-button {
@@ -7949,6 +7949,10 @@ textarea.form-control-lg {
 
 .w-25 {
   width: 25% !important;
+}
+
+.w-30 {
+  width: 30% !important;
 }
 
 .w-50 {
@@ -16345,6 +16349,51 @@ textarea.form-control-lg {
   bottom: -3.5px;
 }
 
+.accordion-item {
+  margin-bottom: 0.75rem;
+  border-radius: 0.625rem !important;
+}
+
+.accordion-button {
+  font-family: var(--bs-headings-font-family);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 0.625rem !important;
+}
+.accordion-button:hover {
+  color: var(--bs-primary);
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: var(--bs-white);
+}
+
+.accordion-body {
+  padding-top: 0;
+}
+
+#scrollUp {
+  position: fixed;
+  display: none;
+  width: 45px;
+  height: 45px;
+  bottom: 75px;
+  right: 40px;
+  border-radius: 50%;
+  background-color: rgba(4, 166, 244, 0.65);
+  transition: all 250ms linear;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  cursor: pointer;
+}
+#scrollUp:hover {
+  background-color: rgba(4, 166, 244, 0.9);
+}
+#scrollUp:hover .fa-arrow-up {
+  font-size: 20px;
+}
+
 .card-transition {
   transition: box-shadow 0.25s ease, transform 0.25s ease;
   box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
@@ -16622,6 +16671,10 @@ textarea.form-control-lg {
 .cloudapper-roi-section .card-img-top {
   min-height: 1px;
   position: relative;
+}
+
+.bg-linear-gradient {
+  background-image: linear-gradient(63.34deg, #FFF5EB 0%, #F4F2F9 100%);
 }
 
 .footer-section {

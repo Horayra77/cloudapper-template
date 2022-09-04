@@ -72,7 +72,6 @@ $btn-line-height: 1.5;
 $btn-padding-y: 15px;
 $btn-padding-x: 40px;
 
-
 $btn-padding-y-sm: 10px;
 $btn-padding-x-sm: 15px;
 $btn-font-size-sm: 14px;
@@ -83,6 +82,36 @@ $dropdown-link-hover-bg: none;
 
 // Card
 $card-border-width: 0;
+
+
+
+//Accordion
+
+$accordion-body-padding-y: 1.5rem;
+$accordion-body-padding-x: 1.5rem;
+$accordion-border-radius: .625rem;
+$accordion-inner-border-radius: .625rem;
+$accordion-button-active-bg: #f8f8f8;
+$accordion-button-active-color: $primary;
+$accordion-button-focus-border-color: $primary;
+$accordion-button-padding-y: 1.5rem;
+$accordion-button-padding-x: 1.5rem;
+$accordion-transition: .4s;
+
+$accordion-border-width: 1px;
+$accordion-border-color: rgba(0, 0, 0, .125);
+
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $primary;
+$accordion-icon-width: 1.5rem;
+$accordion-icon-transition: transform .2s ease;
+$accordion-icon-transform: rotateZ(90deg);
+
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+
 
 // Import Bootstrap 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -29,6 +29,7 @@
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.8",
     "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1",
     "jquery": "^3.6.1",
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0"
