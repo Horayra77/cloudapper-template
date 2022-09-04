@@ -7951,10 +7951,6 @@ textarea.form-control-lg {
   width: 25% !important;
 }
 
-.w-30 {
-  width: 30% !important;
-}
-
 .w-50 {
   width: 50% !important;
 }
@@ -16584,12 +16580,16 @@ textarea.form-control-lg {
 }
 
 .help-section .transition-all {
-  transition: all 400ms ease-in-out;
+  transition: all 0.2s;
+  transition-delay: 0s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
 .help-section .transition-all:hover {
-  background-color: var(--bs-primary) !important;
-  color: var(--bs-white);
+  transform: translate(0, -10px);
+  position: relative;
+  z-index: 50;
+  box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.1);
 }
 .help-section .feature-icon-sm {
   display: flex;
@@ -16603,6 +16603,25 @@ textarea.form-control-lg {
 }
 .help-section .feature-secondary {
   background-color: #F1F5FA;
+}
+
+.cloudapper-roi-section .card {
+  position: relative;
+  width: 100%;
+}
+.cloudapper-roi-section .shadow-light-lg {
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
+}
+.cloudapper-roi-section .lift {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.cloudapper-roi-section .lift-lg:hover {
+  box-shadow: 0 2rem 5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05) !important;
+  transform: translate3d(0, -5px, 0);
+}
+.cloudapper-roi-section .card-img-top {
+  min-height: 1px;
+  position: relative;
 }
 
 .footer-section {
